@@ -11,6 +11,7 @@ import { AppContext, useAppState } from "./service/AppService";
 
 function App() {
   const [currentRoute, setCurrentRout] = useState();
+  
   useEffect(() => {
     const path = window.location.pathname.split("/")[1];
     setCurrentRout(path);
